@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación Técnica</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Documentación Técnica</header>
+        <ul>
+            <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript y Java</a></li>
+            <li><a class="nav-link" href="#HTML_and_CSS">HTML y CSS</a></li>
+            <li><a class="nav-link" href="#Version_Control">Control de Versiones</a></li>
+            <li><a class="nav-link" href="#React_and_Redux">React y Redux</a></li>
+            <li><a class="nav-link" href="#Otra_Section">Otra Sección</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript y Java</header>
+            <p>Descripción de JavaScript y Java.</p>
+            <p>Parrafo 2.</p>
+            <p>Parrafo 3.</p>
+            <p>Parrafo 4.</p>
+            <p>Parrafo 5.</p>
+            <p>Parrafo 6.</p>
+            <p>Parrafo 7.</p>
+            <p>Parrafo 8.</p>
+            <p>Parrafo 9.</p>
+            <p>Parrafo 10.</p>
+            <code>Código 1</code>
+            <code>Código 2</code>
+            <code>Código 3</code>
+            <code>Código 4</code>
+            <code>Código 5</code>
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+            <li>Elemento de lista 4</li>
+            <li>Elemento de lista 5</li>
+        </section>
+
+        <section class="main-section" id="HTML_and_CSS">
+            <header>HTML y CSS</header>
+            <p>Descripción de HTML y CSS.</p>
+            <p>Parrafo 2.</p>
+            <p>Parrafo 3.</p>
+            <p>Parrafo 4.</p>
+            <p>Parrafo 5.</p>
+            <p>Parrafo 6.</p>
+            <p>Parrafo 7.</p>
+            <p>Parrafo 8.</p>
+            <p>Parrafo 9.</p>
+            <p>Parrafo 10.</p>
+            <code>Código 1</code>
+            <code>Código 2</code>
+            <code>Código 3</code>
+            <code>Código 4</code>
+            <code>Código 5</code>
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+            <li>Elemento de lista 4</li>
+            <li>Elemento de lista 5</li>
+        </section>
+
+        <section class="main-section" id="Version_Control">
+            <header>Control de Versiones</header>
+            <p>Descripción de Control de Versiones.</p>
+            <p>Parrafo 2.</p>
+            <p>Parrafo 3.</p>
+            <p>Parrafo 4.</p>
+            <p>Parrafo 5.</p>
+            <p>Parrafo 6.</p>
+            <p>Parrafo 7.</p>
+            <p>Parrafo 8.</p>
+            <p>Parrafo 9.</p>
+            <p>Parrafo 10.</p>
+            <code>Código 1</code>
+            <code>Código 2</code>
+            <code>Código 3</code>
+            <code>Código 4</code>
+            <code>Código 5</code>
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+            <li>Elemento de lista 4</li>
+            <li>Elemento de lista 5</li>
+        </section>
+
+        <section class="main-section" id="React_and_Redux">
+            <header>React y Redux</header>
+            <p>Descripción de React y Redux.</p>
+            <p>Parrafo 2.</p>
+            <p>Parrafo 3.</p>
+            <p>Parrafo 4.</p>
+            <p>Parrafo 5.</p>
+            <p>Parrafo 6.</p>
+            <p>Parrafo 7.</p>
+            <p>Parrafo 8.</p>
+            <p>Parrafo 9.</p>
+            <p>Parrafo 10.</p>
+            <code>Código 1</code>
+            <code>Código 2</code>
+            <code>Código 3</code>
+            <code>Código 4</code>
+            <code>Código 5</code>
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+            <li>Elemento de lista 4</li>
+            <li>Elemento de lista 5</li>
+        </section>
+
+        <section class="main-section" id="Otra_Section">
+            <header>Otra Sección</header>
+            <p>Descripción de otra sección.</p>
+            <p>Parrafo 2.</p>
+            <p>Parrafo 3.</p>
+            <p>Parrafo 4.</p>
+            <p>Parrafo 5.</p>
+            <p>Parrafo 6.</p>
+            <p>Parrafo 7.</p>
+            <p>Parrafo 8.</p>
+            <p>Parrafo 9.</p>
+            <p>Parrafo 10.</p>
+            <code>Código 1</code>
+            <code>Código 2</code>
+            <code>Código 3</code>
+            <code>Código 4</code>
+            <code>Código 5</code>
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+            <li>Elemento de lista 4</li>
+            <li>Elemento de lista 5</li>
+        </section>
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            const sectionId = link.textContent.trim().replace(/\s+/g, '_');
+            link.href = `#${sectionId}`;
+        });
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+    <script>
+        // Obtener todas las secciones principales
+        const mainSections = document.querySelectorAll('.main-section');
+
+        // Iterar sobre cada sección principal
+        mainSections.forEach(section => {
+            // Obtener el texto del primer hijo y reemplazar espacios con guiones bajos
+            const idText = section.firstElementChild.textContent.trim().replace(/\s+/g, '_');
+            // Asignar el ID modificado a la sección
+            section.id = idText;
+        });
+    </script>
+</body>
+</html>
